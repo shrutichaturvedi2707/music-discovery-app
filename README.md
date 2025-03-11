@@ -2,8 +2,9 @@
 
 I created a Music Discovery App for the Lab 5. The application allows users to search for music artists and discover similar artists based on their preferences using the Spotify Web API.
 
-* *Lab URL*: https://git.cs.dal.ca/shrutic/csci-3172/-/tree/main/labs/lab5
-* *Git URL*: 
+* *Netlify URL*: https://musicdiscoveryapp1.netlify.app/
+* *Github URL*: https://github.com/shrutichaturvedi2707/music-discovery-app
+* *GitLab URL*: https://github.com/shrutichaturvedi2707/music-discovery-app
 
 ## Author
 * Shruti Chaturvedi (shrutichaturvedi@dal.ca)
