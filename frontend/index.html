@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Discovery App</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-4">
+    <header class="text-center mb-4">
+      <h1>Music Discovery App</h1>
+      <p class="lead">Find new artists based on your favorites</p>
+    </header>
+
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card mb-4">
+          <div class="card-body">
+            <h2 class="card-title">Search for Artists</h2>
+            <div class="input-group mb-3">
+              <input type="text" id="artist-search" class="form-control" placeholder="Enter an artist name..." aria-label="Search for an artist">
+              <button id="search-btn" class="btn btn-primary" type="button" aria-label="Search">
+                Search
+              </button>
+            </div>
+            <div id="error-message" class="alert alert-danger mt-3 d-none" role="alert"></div>
+          </div>
+        </div>
+
+        <div id="loading" class="text-center my-4 d-none">
+          <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <p>Searching...</p>
+        </div>
+
+        <div id="artist-results" class="row"></div>
+
+        <div id="artist-detail" class="card d-none">
+          <div class="card-header d-flex align-items-center">
+            <button id="back-btn" class="btn btn-outline-secondary me-3" aria-label="Back to search results">
+              Back
+            </button>
+            <h2 id="artist-name" class="mb-0"></h2>
+          </div>
+          <div class="card-body">
+            <div class="row mb-4">
+              <div class="col-md-4">
+                <div id="artist-meta"></div>
+              </div>
+              <div class="col-md-8">
+                <h3>Top Releases</h3>
+                <ul id="releases-list" class="list-group"></ul>
+              </div>
+            </div>
+            <div class="similar-artists mt-4">
+              <h3>Similar Artists You Might Like</h3>
+              <div id="similar-artists-container" class="row mt-3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
